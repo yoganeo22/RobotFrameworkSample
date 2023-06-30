@@ -14,12 +14,12 @@ ${DELAY}          0
 ${LOGIN URL}      https://${SERVER}/
 
 *** Keywords ***
-Open Browser To Login Page
+Open Browser To Main Page
     Open Browser    ${LOGIN URL}    ${BROWSER}
     Maximize Browser Window
     Set Selenium Speed    ${DELAY}
-    Login Page Should Be Open
+    Main Page Should Be Open
 
-Login Page Should Be Open
+Main Page Should Be Open
     Title Should Be    Fast and reliable end-to-end testing for modern web apps | Playwright
 
